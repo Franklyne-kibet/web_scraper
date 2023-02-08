@@ -59,10 +59,10 @@ while i <= int(jobs_num/2) + 1:
         #We try to click on the load more results buttons in case it is already 
         infinite_scroller_button = driver.find_element(By.XPATH, ".//button[@aria-label='Load more results']")
         infinite_scroller_button.click()
-        time.sleep(0.1)
+        time.sleep(0.5)
     except:
         #If there is no button, there will be an error, so we keep scrolling down.
-        time.sleep(0.1)
+        time.sleep(0.5)
         pass
 
 #get a list containing all jobs that we have found
